@@ -5,7 +5,7 @@
 <meta charset ="UTF-8">
 <meta name="viewport"
          content ="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-<title>Testaus2!</title>
+<title>Testaus!</title>
 
 <!--tuodaan three.js-->
 <script src="https://unpkg.com/three@0.126.0/build/three.js"></script>
@@ -25,7 +25,7 @@ const gl = canvas.getContext("webgl", {xrCompatible: true});
 const scene = new THREE.Scene();
 
 //Eri värit joka sivulle
-const directionalLight = new THREE.DirectionalLigth(0xffffff, 0.3);
+const directionalLight = new THREE.DirectionalLight(0xffffff, 0.3);
 directionalLight.position.set(10, 15, 10);
 scene.add(directionalLight);
 // Set up the WebGLRenderer, which handles rendering to the session's base layer.
@@ -120,11 +120,6 @@ if (hitTestResults.length > 0 && reticle) {
      </body>
 
 </html>
-
-
-
-
-
 
 
 
